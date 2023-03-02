@@ -8,11 +8,10 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="414.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <Label layoutX="189.0" layoutY="20.0" prefHeight="18.0" prefWidth="190.0" text="Site Name" />
-      <TextField fx:id="sitename" layoutX="186.0" layoutY="39.0" prefHeight="26.0" prefWidth="216.0" />
+      <TextField fx:id="siteName" layoutX="186.0" layoutY="39.0" prefHeight="26.0" prefWidth="216.0" />
       <Label layoutX="186.0" layoutY="82.0" prefHeight="18.0" prefWidth="190.0" text="Host/IP/URL" />
       <TextField fx:id="hostname" layoutX="186.0" layoutY="101.0" prefHeight="26.0" prefWidth="216.0" />
       <TextField fx:id="username" layoutX="186.0" layoutY="162.0" prefHeight="26.0" prefWidth="120.0" />
@@ -20,7 +19,7 @@
       <Label layoutX="186.0" layoutY="143.0" prefHeight="18.0" prefWidth="190.0" text="Username" />
       <Label layoutX="186.0" layoutY="205.0" prefHeight="18.0" prefWidth="190.0" text="Password" />
       <CheckBox fx:id="anonymous" layoutX="320.0" layoutY="166.0" mnemonicParsing="false" text="Anonymous" />
-      <CheckBox fx:id="dontsave" layoutX="320.0" layoutY="229.0" mnemonicParsing="false" text="Dont Save" />
+      <CheckBox fx:id="dontSave" layoutX="320.0" layoutY="229.0" mnemonicParsing="false" text="Dont Save" />
       <TextField fx:id="port" layoutX="186.0" layoutY="278.0" prefHeight="26.0" prefWidth="46.0" />
       <TextField fx:id="timeout" layoutX="270.0" layoutY="279.0" prefHeight="26.0" prefWidth="46.0" />
       <TextField fx:id="retries" layoutX="354.0" layoutY="279.0" prefHeight="26.0" prefWidth="46.0" />
@@ -30,7 +29,7 @@
       <CheckBox fx:id="proxy" layoutX="188.0" layoutY="326.0" mnemonicParsing="false" text="Use Proxy" />
       <CheckBox fx:id="combo" layoutX="322.0" layoutY="326.0" mnemonicParsing="false" text="Use Combo" />
       <Button fx:id="upload" layoutX="14.0" layoutY="421.0" mnemonicParsing="false" text="Upload" />
-      <Button fx:id="newfile" layoutX="87.0" layoutY="421.0" mnemonicParsing="false" text="New" />
+      <Button fx:id="new" layoutX="87.0" layoutY="421.0" mnemonicParsing="false" text="New" />
       <Button fx:id="start" layoutX="161.0" layoutY="421.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="85.0" text="Start Brute" />
       <Button fx:id="reset" layoutX="289.0" layoutY="421.0" mnemonicParsing="false" text="Reset" />
       <Button fx:id="close" layoutX="351.0" layoutY="421.0" mnemonicParsing="false" text="Close" />
@@ -40,7 +39,7 @@
       <TextArea fx:id="comment" layoutX="15.0" layoutY="294.0" prefHeight="110.0" prefWidth="158.0" />
       <CheckBox fx:id="ssl" layoutX="189.0" layoutY="367.0" mnemonicParsing="false" text="SSL Transfer" />
       <CheckBox fx:id="ccc" layoutX="322.0" layoutY="367.0" mnemonicParsing="false" text="Clear (CCC)" />
-      <Label contentDisplay="CENTER" layoutX="3.0" layoutY="463.0" prefHeight="18.0" prefWidth="414.0" text="Contact Me @ Donblackcaesar@gmail.com">
+      <Label contentDisplay="CENTER" layoutX="97.0" layoutY="464.0" prefHeight="18.0" prefWidth="216.0" text="Contact Me @ Donblackcaesar@gmail.com">
          <font>
             <Font name="Bell MT" size="12.0" />
          </font>
