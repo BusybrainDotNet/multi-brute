@@ -19,11 +19,12 @@ public class App extends Application {
 
     @Override
     public void start(Stage stage) throws IOException {
-        scene = new Scene(loadFXML("primary"), 640, 480, Color.BLACK);
+        scene = new Scene(loadFXML("index"));
         stage.setTitle("Log Brute By BusyBrainDotNet");
         Image icon = new Image("file:logs.png");
         stage.getIcons().add(icon);
         stage.setScene(scene);
+        stage.setResizable(false);
         stage.show();
     }
 
