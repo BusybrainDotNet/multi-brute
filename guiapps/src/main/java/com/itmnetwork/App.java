@@ -4,11 +4,9 @@ import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Alert;
-import javafx.scene.control.ButtonType;
+import javafx.scene.control.*;
 import javafx.scene.control.Alert.AlertType;
 import javafx.scene.image.Image;
-import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -19,7 +17,6 @@ import java.io.IOException;
 public class App extends Application {
 
     private static Scene scene;
-    private AnchorPane scenePanel;
 
     @Override
     public void start(Stage stage) throws IOException {
@@ -54,7 +51,6 @@ public class App extends Application {
         alert.setContentText("Hey, Do You Really Want To Close This Application?");
 
         if (alert.showAndWait().get() == ButtonType.OK) {
-            stage = (Stage) scenePanel.getScene().getWindow();
             stage.close();
         }
     }
