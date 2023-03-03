@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="scenePanel" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="414.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.itmnetwork.IndexController">
+<AnchorPane fx:id="scenePanel" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="414.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.itmnetwork.IndexController">
    <children>
       <Label layoutX="189.0" layoutY="49.0" prefHeight="18.0" prefWidth="190.0" text="Site Name" />
       <TextField fx:id="sitename" layoutX="186.0" layoutY="68.0" prefHeight="26.0" prefWidth="216.0" promptText="Website Name" />
@@ -28,30 +28,35 @@
       <Label layoutX="354.0" layoutY="284.0" prefHeight="18.0" prefWidth="46.0" text="Retries" />
       <CheckBox fx:id="proxy" layoutX="188.0" layoutY="349.0" mnemonicParsing="false" text="Use Proxy" />
       <CheckBox fx:id="combo" layoutX="322.0" layoutY="349.0" mnemonicParsing="false" text="Use Combo" />
-      <Button fx:id="start" layoutX="188.0" layoutY="429.0" mnemonicParsing="false" onAction="#checkForm" prefHeight="26.0" prefWidth="216.0" text="Start Brute" textFill="#2c0bbf">
+      <Button fx:id="start" layoutX="188.0" layoutY="440.0" mnemonicParsing="false" onAction="#checkForm" prefHeight="26.0" prefWidth="216.0" text="Start Brute" textFill="#2c0bbf">
          <font>
             <Font name="System Bold" size="12.0" />
          </font></Button>
-      <Button fx:id="reset" layoutX="104.0" layoutY="429.0" mnemonicParsing="false" onAction="#resetFormFields" prefHeight="26.0" prefWidth="67.0" text="Reset" textFill="#2c0bbf">
+      <Button fx:id="reset" layoutX="104.0" layoutY="440.0" mnemonicParsing="false" onAction="#resetFormFields" prefHeight="26.0" prefWidth="67.0" text="Reset" textFill="#2c0bbf">
          <font>
             <Font name="System Bold" size="12.0" />
          </font></Button>
-      <Button fx:id="close" layoutX="16.0" layoutY="428.0" mnemonicParsing="false" onAction="#closePanel" prefHeight="26.0" prefWidth="75.0" text="Close" textFill="#f20505">
+      <Button fx:id="close" layoutX="16.0" layoutY="439.0" mnemonicParsing="false" onAction="#closePanel" prefHeight="26.0" prefWidth="75.0" text="Close" textFill="#f20505">
          <font>
             <Font name="System Bold" size="12.0" />
          </font></Button>
-      <Label layoutX="16.0" layoutY="282.0" prefHeight="18.0" prefWidth="158.0" text="Proxy List" />
+      <Label layoutX="13.0" layoutY="204.0" prefHeight="18.0" prefWidth="158.0" text="Proxy List" />
       <Label layoutX="15.0" layoutY="34.0" prefHeight="18.0" prefWidth="158.0" text="Combo List" />
-      <TextArea fx:id="list" layoutX="14.0" layoutY="54.0" prefHeight="212.0" prefWidth="158.0" />
-      <TextArea fx:id="comment" layoutX="15.0" layoutY="301.0" prefHeight="103.0" prefWidth="158.0" />
+      <TextArea fx:id="combolist" layoutX="14.0" layoutY="54.0" prefHeight="134.0" prefWidth="158.0" />
+      <TextArea fx:id="proxylist" layoutX="13.0" layoutY="223.0" prefHeight="82.0" prefWidth="158.0" />
       <CheckBox fx:id="ssl" layoutX="189.0" layoutY="384.0" mnemonicParsing="false" text="SSL Transfer" />
       <CheckBox fx:id="ccc" layoutX="322.0" layoutY="384.0" mnemonicParsing="false" text="Clear (CCC)" />
-      <Label contentDisplay="CENTER" layoutX="97.0" layoutY="464.0" prefHeight="18.0" prefWidth="216.0" text="Contact Me @ Donblackcaesar@gmail.com">
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="8.0" layoutY="480.0" prefHeight="18.0" prefWidth="403.0" text="Contact Me @ busybrain.spam.hack@gmail.com">
          <font>
             <Font name="Bell MT" size="12.0" />
          </font>
       </Label>
-      <Label fx:id="message" layoutX="16.0" layoutY="14.0" prefHeight="18.0" prefWidth="385.0" textFill="#f20505" />
+      <Label fx:id="message" alignment="CENTER" contentDisplay="CENTER" layoutX="16.0" layoutY="14.0" prefHeight="18.0" prefWidth="385.0" textAlignment="CENTER" textFill="#f20505">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
       <PasswordField fx:id="password" layoutX="186.0" layoutY="239.0" prefHeight="26.0" prefWidth="120.0" promptText="Password" />
+      <Label layoutX="15.0" layoutY="323.0" prefHeight="18.0" prefWidth="158.0" text="Results" />
+      <TextArea fx:id="resultlist" layoutX="14.0" layoutY="342.0" prefHeight="89.0" prefWidth="158.0" />
    </children>
 </AnchorPane>

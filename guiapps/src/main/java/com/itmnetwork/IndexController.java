@@ -19,7 +19,7 @@ public class IndexController {
     @FXML
     private Button reset, close, start;
     @FXML
-    private TextArea list, comment;
+    private TextArea combolist, proxylist, resultlist;
     @FXML
     private Label message;
     @FXML
@@ -46,6 +46,8 @@ public class IndexController {
         String trytime = retries.getText();
         String outnum = timeout.getText();
         String portnum = port.getText();
+        String proxys = proxylist.getText();
+        String combos = combolist.getText();
 
         if (site.isEmpty()) {
             String name = "Site Name";
@@ -68,6 +70,12 @@ public class IndexController {
         } else if (portnum.isEmpty()) {
             String name = "Port";
             formValidationError(name);
+        } else if (proxy.isSelected() && proxys.isEmpty()) {
+            String name = "Proxy List";
+            formValidationError(name);
+        } else if (combo.isSelected() && combos.isEmpty()) {
+            String name = "Combo List";
+            formValidationError(name);
         }
     }
 
@@ -85,8 +93,8 @@ public class IndexController {
         retries.clear();
         timeout.clear();
         port.clear();
-        list.clear();
-        comment.clear();
+        combolist.clear();
+        proxylist.clear();
     }
 
     // Close Application Button
