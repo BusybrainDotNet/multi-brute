@@ -4,7 +4,11 @@ import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Alert;
+import javafx.scene.control.ButtonType;
+import javafx.scene.control.Alert.AlertType;
 import javafx.scene.image.Image;
+import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -15,6 +19,7 @@ import java.io.IOException;
 public class App extends Application {
 
     private static Scene scene;
+    private AnchorPane scenePanel;
 
     @Override
     public void start(Stage stage) throws IOException {
@@ -25,6 +30,11 @@ public class App extends Application {
         stage.setScene(scene);
         stage.setResizable(false);
         stage.show();
+
+        stage.setOnCloseRequest(event -> {
+            event.consume();
+            closePanel(stage);
+        });
     }
 
     static void setRoot(String fxml) throws IOException {
@@ -34,6 +44,19 @@ public class App extends Application {
     private static Parent loadFXML(String fxml) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(App.class.getResource(fxml + ".fxml"));
         return fxmlLoader.load();
+    }
+
+    // Close Application Tab
+    public void closePanel(Stage stage) {
+        Alert alert = new Alert(AlertType.CONFIRMATION);
+        alert.setTitle("Close Application");
+        alert.setHeaderText("You Are About To Close This Application");
+        alert.setContentText("Hey, Do You Really Want To Close This Application?");
+
+        if (alert.showAndWait().get() == ButtonType.OK) {
+            stage = (Stage) scenePanel.getScene().getWindow();
+            stage.close();
+        }
     }
 
     public static void main(String[] args) {
