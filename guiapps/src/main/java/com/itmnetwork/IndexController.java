@@ -10,6 +10,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.*;
 import javafx.scene.control.Alert.AlertType;
 import javafx.scene.layout.AnchorPane;
+import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 
 public class IndexController implements Initializable {
@@ -73,6 +74,7 @@ public class IndexController implements Initializable {
 
     // Display Error Message
     private void formValidationError(String string) {
+        message.setTextFill(Color.RED);
         message.setText("ERROR: " + string + " Can't Be Empty");
     }
 
@@ -107,8 +109,10 @@ public class IndexController implements Initializable {
             URL url = new URL(host);
             URLConnection connection = url.openConnection();
             connection.connect();
+            message.setTextFill(Color.GREEN);
             message.setText("Loading: Please Wait, Process Is Ongoing...");
         } catch (Exception e) {
+            message.setTextFill(Color.RED);
             message.setText("ERROR: Internet Is Not Connected!");
         }
     }

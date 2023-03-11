@@ -39,8 +39,8 @@
          </font></Button>
       <Label layoutX="188.0" layoutY="344.0" prefHeight="18.0" prefWidth="216.0" text="Proxy List" />
       <Label layoutX="15.0" layoutY="34.0" prefHeight="18.0" prefWidth="158.0" text="Combo List" />
-      <TextArea fx:id="combolist" layoutX="14.0" layoutY="54.0" prefHeight="281.0" prefWidth="158.0" />
-      <TextArea fx:id="proxylist" layoutX="186.0" layoutY="360.0" prefHeight="68.0" prefWidth="216.0" />
+      <TextArea fx:id="combolist" layoutX="14.0" layoutY="54.0" prefHeight="281.0" prefWidth="158.0" promptText="Paste Your Combo List Here" />
+      <TextArea fx:id="proxylist" layoutX="186.0" layoutY="360.0" prefHeight="68.0" prefWidth="216.0" promptText="Paste Your Proxy List Here" />
       <CheckBox fx:id="ssl" layoutX="188.0" layoutY="319.0" mnemonicParsing="false" text="SSL Transfer" />
       <CheckBox fx:id="ccc" layoutX="321.0" layoutY="319.0" mnemonicParsing="false" text="Clear (CCC)" />
       <Label alignment="CENTER" contentDisplay="CENTER" layoutX="8.0" layoutY="480.0" prefHeight="18.0" prefWidth="403.0" text="Contact Me @ busybrain.spam.hack@gmail.com">
@@ -48,12 +48,12 @@
             <Font name="Bell MT" size="12.0" />
          </font>
       </Label>
-      <Label fx:id="message" alignment="CENTER" contentDisplay="CENTER" layoutX="16.0" layoutY="6.0" prefHeight="26.0" prefWidth="386.0" textAlignment="CENTER" textFill="#f20505">
+      <Label fx:id="message" alignment="CENTER" contentDisplay="CENTER" layoutX="16.0" layoutY="6.0" prefHeight="26.0" prefWidth="386.0" textAlignment="CENTER">
          <font>
             <Font name="System Bold" size="12.0" />
          </font></Label>
       <Label layoutX="15.0" layoutY="342.0" prefHeight="18.0" prefWidth="158.0" text="Results" />
-      <TextArea fx:id="resultlist" layoutX="14.0" layoutY="361.0" prefHeight="68.0" prefWidth="158.0" />
+      <TextArea fx:id="resultlist" layoutX="14.0" layoutY="361.0" prefHeight="68.0" prefWidth="158.0" promptText="Do Not Paste Anything Here" />
       <Spinner fx:id="retries" layoutX="344.0" layoutY="256.0" prefHeight="26.0" prefWidth="54.0" />
       <Spinner fx:id="timeout" layoutX="266.0" layoutY="255.0" prefHeight="26.0" prefWidth="53.0" />
       <Group layoutX="189.0" layoutY="183.0">
@@ -63,7 +63,7 @@
                   <ToggleGroup fx:id="Thread" />
                </toggleGroup>
             </RadioButton>
-            <RadioButton fx:id="thread2" layoutX="84.0" mnemonicParsing="true" text="20" toggleGroup="$Thread" />
+            <RadioButton fx:id="thread2" layoutX="84.0" mnemonicParsing="false" text="20" toggleGroup="$Thread" />
             <RadioButton fx:id="thread3" layoutX="168.0" mnemonicParsing="false" text="30" toggleGroup="$Thread" />
             <RadioButton fx:id="thread4" layoutY="26.0" mnemonicParsing="false" text="40" toggleGroup="$Thread" />
             <RadioButton fx:id="thread5" layoutX="84.0" layoutY="26.0" mnemonicParsing="false" text="50" toggleGroup="$Thread" />
